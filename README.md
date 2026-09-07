@@ -38,14 +38,7 @@ Currently, I am focusing on:
 - MongoDB
 - REST APIs
 
-### AI & Machine Learning
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Data Preprocessing
-- Basic Machine Learning Models
 
 ### Tools
 
