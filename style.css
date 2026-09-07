@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0d12;
+    color: #e8eaf0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* Navbar */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #0b0d12;
+    border-bottom: 1px solid #222631;
+}
+
+.nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #a9afbd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 24px;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.small-title {
+    color: #8f83ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.05;
+    margin: 12px 0;
+}
+
+.hero h2 {
+    color: #b9beca;
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero-text > p:not(.small-title) {
+    color: #8f96a5;
+    max-width: 570px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 17px;
+    background: #9387ff;
+    color: #090a0f;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn.outline {
+    background: transparent;
+    color: #e8eaf0;
+    border: 1px solid #383d4b;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.social-links a,
+.contact-links a {
+    color: #8f96a5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-links a:hover,
+.contact-links a:hover {
+    color: white;
+}
+
+
+/* Code box */
+
+.code-box {
+    background: #11141b;
+    border: 1px solid #292e3a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dots {
+    padding: 12px;
+    border-bottom: 1px solid #292e3a;
+}
+
+.dots span {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #3a3e49;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.code-box pre {
+    padding: 25px;
+    overflow-x: auto;
+}
+
+.code-box code {
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    color: #bfc5d2;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 100px 0;
+}
+
+.light-section {
+    background: #0e1118;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: #777e8d;
+    font-size: 13px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+}
+
+
+/* About */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 40px;
+}
+
+.about p {
+    color: #969daa;
+    margin-bottom: 18px;
+}
+
+.info-card {
+    border: 1px solid #292e3a;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.info-card p {
+    margin-bottom: 8px;
+}
+
+
+/* Skills */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.skill {
+    border: 1px solid #292e3a;
+    padding: 23px;
+    border-radius: 8px;
+}
+
+.skill h3 {
+    margin-bottom: 7px;
+}
+
+.skill p {
+    color: #858c9b;
+    font-size: 14px;
+}
+
+
+/* Projects */
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.project {
+    border: 1px solid #292e3a;
+    border-radius: 8px;
+    padding: 27px;
+}
+
+.project:hover,
+.skill:hover {
+    border-color: #555b6c;
+}
+
+.project-tech {
+    color: #8f83ff;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.project h3 {
+    margin: 8px 0;
+    font-size: 22px;
+}
+
+.project p:not(.project-tech) {
+    color: #8f96a5;
+    font-size: 14px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.project-buttons a,
+.simple-link {
+    color: #aaa1ff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* Experience */
+
+.experience {
+    max-width: 750px;
+    border-left: 2px solid #383d4b;
+    padding-left: 25px;
+}
+
+.experience h3 {
+    font-size: 25px;
+    margin: 8px 0;
+}
+
+.experience > p:not(.project-tech),
+.experience li {
+    color: #9097a6;
+    font-size: 14px;
+}
+
+.experience ul {
+    margin-top: 15px;
+    padding-left: 18px;
+}
+
+
+/* DSA */
+
+.journey {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.journey > div {
+    border: 1px solid #292e3a;
+    border-radius: 8px;
+    padding: 27px;
+}
+
+.journey h3 {
+    margin-bottom: 8px;
+}
+
+.journey p {
+    color: #8f96a5;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    padding: 110px 0;
+    background: #0e1118;
+}
+
+.contact h2 {
+    font-size: 48px;
+    margin: 8px 0;
+}
+
+.contact > .container > p:not(.small-title) {
+    color: #8f96a5;
+}
+
+.email {
+    display: inline-block;
+    color: #aaa1ff;
+    text-decoration: none;
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    border-top: 1px solid #222631;
+    padding: 25px 0;
+    color: #666d7b;
+    font-size: 12px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Mobile */
+
+@media (max-width: 750px) {
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px 5%;
+        background: #0b0d12;
+        flex-direction: column;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 100px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .journey {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .contact h2 {
+        font-size: 38px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 7px;
+    }
+}
