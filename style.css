@@ -262,7 +262,6 @@ nav a:hover {
 
 
 /* Projects */
-
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -310,7 +309,6 @@ nav a:hover {
     font-size: 13px;
     font-weight: bold;
 }
-
 
 /* Experience */
 
